@@ -1,0 +1,109 @@
+.container {
+  position: relative;
+  font-family: Arial;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 96.95%;
+  padding: 20px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+div.gallery {
+margin: 5px auto;
+border: 1px solid #ccc;
+width: fit-content;
+text-align: center;
+}
+
+div.gallery:hover {
+border: 1px solid #777;
+}
+
+div.gallery img.centered-image {
+width: 400px; /* Adjust this width to make the image not too small */
+height: auto;
+display: block;
+margin-left: auto;
+margin-right: auto
+}
+
+div.desc {
+padding: 15px;
+text-align: center;
+}
+
+div.scroll-container {
+background-color: #333;
+overflow-x: auto;
+white-space: nowrap;
+padding: 10px;
+margin-top: 20px;
+}
+
+div.scroll-container img {
+display: inline-block;
+padding: 10px;
+}
+
+.picsm, .picsza {
+  margin: 20px 0;
+  text-align: center; /* Center text inside h2 and p */
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.h2ic {
+  margin-top: 80px;
+}
+
+.card {
+  margin: 0 auto; /* Center the card */
+  box-sizing: border-box;
+  width: 254px;
+  height: 254px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 17px;
+  object-fit: cover;
+}
+
+.card:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}

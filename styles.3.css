@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    .freeman-regular {
+        font-family: "Freeman", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }      
+}
+
+.header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(mylibrary.images/Untitled\ design.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 100px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: hotpink;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 32px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.main{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2em 0em;
+}
+
+.audio{
+    width: 45%;
+    max-width: 300px; /* Ensuring images don't get too large */
+    height: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.1em;
+    background-color: #272727;
+    color: white;
+    box-shadow: 1px 1px 20px 1px black;
+    margin: 1em;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.audio img{
+    width: 200px;
+    height: 200px;
+    margin: 0.5em;
+    border: 2px solid white;
+    border-radius: 5px; /* Adding a border */
+}
+
+.audio h2{
+    font-weight: 500;
+    font-size: medium;
+    margin: 0.5em;
+}
+
+.audio p{
+    font-size: small;
+    font-weight: 300;
+    text-align: center;
+    margin: 0.5em;
+}
+
+.btn-btn-primary{
+    display: inline-block;
+    text-decoration: none;
+    color: white ;
+    border: 1px solid gray;
+    padding: 5px 15px;
+    font-size: 15px;
+    background: gray;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn-btn-primary:hover{
+    color: var(--bs-white);
+    background-color: gray;
+    border-color: gray;
+}
+
+footer {
+    background-color: #111;
+}
+
+.footercontainer {
+    width: 100%;
+    padding: 20px 10px 10px; /* Reduced padding */
+}
+
+.socialicons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialicons a {
+    text-decoration: none;
+    padding: 5px; /* Reduced padding */
+    background-color: #fff;
+    margin: 5px; /* Reduced margin */
+    border-radius: 50%;
+}
+
+.socialicons a i {
+    font-size: 1.5em; /* Reduced font size */
+    color: #111;
+    opacity: 0.9;
+}
+
+/* Hover effect on social media icons */
+.socialicons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialicons a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+.footernav {
+    margin: 20px 0; /* Reduced margin */
+}
+
+.footernav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0; /* Removed padding */
+    margin: 0; /* Removed margin */
+}
+
+.footernav ul li a {
+    color: white;
+    margin: 10px; /* Reduced margin */
+    text-decoration: none;
+    font-size: 1em; /* Reduced font size */
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footernav ul li a:hover {
+    opacity: 1;
+}
+
+@media (max-width: 700px) {
+    .footernav ul {
+        flex-direction: column;
+    }
+    .footernav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 5px; /* Reduced margin */
+    }
+    .audio {
+        width: 80%; /* Full width for smaller screens */
+    }
+}
